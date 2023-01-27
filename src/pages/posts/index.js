@@ -27,20 +27,20 @@ export default function PostsList({ posts }) {
 
       <div className="font-bold text-lg">Posts List Page</div>
 
-      <div className="mt-4 max-w-md">
+      <div className="mt-4">
         {posts.map((post) => {
           return (
             <div
-              className="my-3 p-2 border border-gray-300 rounded-md hover:bg-blue-100 hover:duration-1000"
+              className="my-3 max-w-4xl p-2 border border-gray-300 rounded-md hover:bg-blue-100 hover:duration-1000"
               key={post.id}
             >
               <Link href={`/posts/${post.id}`}>
-                <p className="font-medium text-blue-500">
+                <span className="font-medium text-blue-500 text-lg border-r-2 border-blue-200 px-3">
                     {post.id} - {post.title.length >= 40 ? post.title.slice(0, 40)+'...' : post.title}
-                </p>
-                <p className="pl-5">
+                </span>
+                <span className="pl-5">
                     {post.body.length >= 50 ? post.body.slice(0, 50)+'...' : post.body}
-                </p>
+                </span>
               </Link>
             </div>
           );

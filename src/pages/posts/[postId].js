@@ -52,14 +52,12 @@ export default function Post({ post }) {
         </Link>
       </div>
 
-      <div className="font-bold text-lg">Posts Page</div>
+      <div className="font-bold text-lg">Posts ID : {post.id}</div>
 
       <div className="mt-4 max-w-xl">
         <div className="my-2 p-2" key={post.id}>
-          <p className="font-medium text-lg">
-            {post.id} - {post.title}
-          </p>
-          <p className="pl-4 mt-3">{post.body}</p>
+          <p className="font-medium text-lg text-blue-500">{post.title}</p>
+          <p className="p-4 mt-3 border border-gray-300 rounded-md">{post.body}</p>
         </div>
       </div>
     </div>
