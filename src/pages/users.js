@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
 
     const data = await axios.get('https://jsonplaceholder.typicode.com/users')
                 .then( response => response.data )
