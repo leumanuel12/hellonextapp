@@ -37,7 +37,7 @@ export default function ProductsList() {
       {paths
         ? paths.map((product) => {
             return (
-              <button>
+              <button key={product}>
                 <Link
                   className="p-2"
                   href={`/product/${product}`}
