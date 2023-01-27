@@ -17,17 +17,19 @@ export async function getStaticProps() {
 
 export default function Users({ users }) {
   return (
-    <div className="m-4">
+    <div className="m-3 max-w-7xl mx-auto">
       <div className="p-3 mb-3">
         <Link className="p-2" href="/">
-          Go back
+          &#60; Home
         </Link>
       </div>
-      <div className="mb-5 font-medium text-lg">Users Page</div>
+      <div className="font-bold text-lg">Users Page</div>
 
-      {users.map((user) => {
-        return <User user={user} key={user.id} />;
-      })}
+      <div className="mt-4 max-w-md">
+        {users.map((user) => {
+          return <User user={user} key={user.id} />;
+        })}
+      </div>
     </div>
   );
 }

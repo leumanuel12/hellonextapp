@@ -27,14 +27,14 @@ export default function Docs() {
   // (7) now, if we try to view only the documentation home page through "localhost:3000/docs", this will return a 404 page. to fix, we will use an optional "Catch All Routes".
   // (8) by wrapping the the filename with another bracket like this -> [[...params]], we can now view the default docs page.
   return (
-    <div className="m-3">
+    <div className="m-3 max-w-7xl mx-auto">
       <div className="p-3 mb-3">
         <Link className="p-2" href="/">
-          Go back
+          &#60; Home
         </Link>
       </div>
 
-      <h2>Documentation Home Page</h2>
+      <div className="font-bold text-lg">Documentation Home Page</div>
     </div>
   );
 }

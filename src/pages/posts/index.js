@@ -11,7 +11,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: result.slice(0, 10), //manual limiting to 10
+      posts: result,
     },
   };
 }
@@ -31,14 +31,16 @@ export default function PostsList({ posts }) {
         {posts.map((post) => {
           return (
             <div
-              className="my-3 p-2 border border-gray-300 rounded-md hover:bg-blue-100"
+              className="my-3 p-2 border border-gray-300 rounded-md hover:bg-blue-100 hover:duration-1000"
               key={post.id}
             >
               <Link href={`/posts/${post.id}`}>
                 <p className="font-medium text-blue-500">
-                  {post.id} - {post.title.slice(0, 30)}...
+                    {post.id} - {post.title.length >= 40 ? post.title.slice(0, 40)+'...' : post.title}
                 </p>
-                <p className="pl-3">{post.body.slice(0, 40)}...</p>
+                <p className="pl-5">
+                    {post.body.length >= 50 ? post.body.slice(0, 50)+'...' : post.body}
+                </p>
               </Link>
             </div>
           );

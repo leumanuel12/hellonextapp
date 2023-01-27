@@ -13,9 +13,8 @@ export async function getStaticPaths() {
   //console.log(result.map( posts => { return { params: { postId: posts.id.toString() } } } ).splice(0,10));
 
   const ids = result.map((posts) => {
-                return { params: { postId: posts.id.toString() } };
-            })
-            .splice(0, 10); //limited 10 data only for this example
+                return { params: { postId: posts.id.toString() } }; //aternative using back ticks to determine as string: `${posts.id}`
+            });
 
   return {
     paths: ids,

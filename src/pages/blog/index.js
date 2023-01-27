@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <div className="m-3">
+    <div className="m-3 max-w-7xl mx-auto">
 
       <div className="p-3 mb-3">
         <Link className="p-2" href="/">
-          Go back
+          &#60; Home
         </Link>
       </div>
 
-      <h2>Blog Page</h2>
+      <div className="font-bold text-lg">Blog Page</div>
 
     </div>
   )

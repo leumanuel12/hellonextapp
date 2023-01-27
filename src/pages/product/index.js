@@ -4,14 +4,14 @@ export default function ProductsList() {
   const paths = [4, 5, 6, 7, 8, 9, 10];
 
   return (
-    <div className="m-3">
+    <div className="m-3 max-w-7xl mx-auto">
       <div className="p-3 mb-3">
         <Link className="p-2" href="/">
-          Go back
+          &#60; Home
         </Link>
       </div>
 
-      <h2>Products List Page</h2>
+      <div className="font-bold text-lg">Products List Page</div>
 
       <div className="max-w-sm inline-block mt-3">
 
