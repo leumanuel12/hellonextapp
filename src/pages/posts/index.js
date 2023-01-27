@@ -17,6 +17,8 @@ export async function getStaticProps() {
 }
 
 export default function PostsList({ posts }) {
+
+
   return (
     <div className="m-3 max-w-7xl mx-auto">
       <div className="p-3 mb-3">
@@ -26,6 +28,7 @@ export default function PostsList({ posts }) {
       </div>
 
       <div className="font-bold text-lg">Posts List Page</div>
+
 
       <div className="mt-4">
         {posts.map((post) => {

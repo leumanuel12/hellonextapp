@@ -6,7 +6,7 @@ export async function getStaticProps() {
   const response = await axios.get("https://jsonplaceholder.typicode.com/users");
   const result = await response.data;
 
-  console.log(result);
+  //console.log(result);
 
   return {
     props: {

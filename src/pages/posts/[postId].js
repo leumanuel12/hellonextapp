@@ -1,5 +1,6 @@
 import axios from "axios";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 
 
@@ -14,11 +15,14 @@ export async function getStaticPaths() {
 
   const ids = result.map((posts) => {
                 return { params: { postId: posts.id.toString() } }; //aternative using back ticks to determine as string: `${posts.id}`
-            });
+            })
+            .slice(0,5); // (A1) here we set the initial data to be shown.
 
   return {
     paths: ids,
-    fallback: false,
+    fallback: true,
+    // (A2) if we set fallback to true, data that is outside the pre-rendered data will be rendered by Nextjs upon request...
+    // (A3) given that the data by the ID passed exist.
   };
 }
 
@@ -31,19 +35,45 @@ export async function getStaticProps(ctx) {
   //console.log(ctx.params)
 
   // (1) First we get the individual post by appending the postId in the url
-  const response = await axios.get(
-    `https://jsonplaceholder.typicode.com/posts/${postId}`
-  );
-  const result = await response.data;
+  try {
+    const response = await axios.get(
+      `https://jsonplaceholder.typicode.com/posts/${postId}`
+    )
+    const result = await response.data;
 
-  return {
-    props: {
-      post: result,
-    },
-  };
+    return {
+      props: {
+        post: result,
+      },
+    };
+
+  } catch (error) {
+
+    console.log(error.message);
+
+    // (A4) since we have set fallback=true, we need to return a 404 page for the postId request that are not present in our data
+    // (A5) we now encapsulated our axios query inside the trycatch so we can check if the ID existed.
+    // (A6) we will then return an object "{ notFound: true, }" which is prebuilt variable to return a 404 page.
+    return {
+      notFound: true,
+    }
+  
+  }
+
+
 }
 
 export default function Post({ post }) {
+
+  const router = useRouter();
+  //console.log(router)
+
+  // (A7) if we set falback=true in the getStaticPaths, here we can show a loading preview to the user while the data is being rendered by Nextjs
+  if(router.isFallback){
+    return <div className="font-medium">Loading data...</div>
+  }
+
+
   return (
     <div className="m-3 max-w-7xl mx-auto">
       <div className="p-3 mb-3">
