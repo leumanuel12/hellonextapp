@@ -1,7 +1,23 @@
+import axios from "axios";
 import Link from "next/link";
 
-export default function ProductsList() {
-  const paths = [4, 5, 6, 7, 8, 9, 10];
+
+export async function getStaticProps() {
+
+  const response = await axios.get('http://localhost:4000/products')
+  const result = response.data;
+
+  //console.log(result)
+
+  return {
+    props:{
+      products: result
+    },
+    revalidate: 10,  //ISR refresh data every 10 seconds upon request
+  }
+}
+
+export default function ProductsList({ products }) {
 
   return (
     <div className="m-3 max-w-7xl mx-auto">
@@ -13,38 +29,23 @@ export default function ProductsList() {
 
       <div className="font-bold text-lg">Products List Page</div>
 
-      <div className="max-w-sm inline-block mt-3">
+      <div className="max-w-sm mt-3">
 
-      <button>
-        <Link className="p-2" href="/product/1">
-          Product 1
-        </Link>
-      </button>
-
-      <button>
-        <Link className="p-2" href="/product/2">
-          Product 2
-        </Link>
-      </button>
-
-      <button>
-        {/* note: "replace" Replace the current history state instead of adding a new url into the stack when you click the browser back button inside the "/product/3" page. */}
-        <Link className="p-2" href="/product/3" replace>
-          Product 3
-        </Link>
-      </button>
-
-      {paths
-        ? paths.map((product) => {
+      {products
+        ? products.map((product) => {
             return (
-              <button key={product}>
-                <Link
-                  className="p-2"
-                  href={`/product/${product}`}
-                >
-                  Product {product}
-                </Link>
-              </button>
+              <div
+                  key={product.id}
+                  className="my-3 max-w-xs p-2">
+                  <button>
+                  <Link
+                    className="p-2 hover:text-blue-500"
+                    href={`/product/${product.id}`}
+                  >
+                    {product.title}
+                  </Link>
+                </button>
+              </div>
             );
           })
         : null}
