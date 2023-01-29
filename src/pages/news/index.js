@@ -1,6 +1,7 @@
 import axios from "axios";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import CategoryFilter from "../components/CategoryFilter";
+
 
 export async function getServerSideProps() {
   const response = await axios.get("http://localhost:4000/news");
@@ -25,6 +26,9 @@ export default function News({ news }) {
       </div>
 
       <div className="font-bold text-lg">News Articles</div>
+
+
+      <CategoryFilter news={news}/>
 
       <div className="m-3 p-3 max-w-2xl border border-blue-300">
 

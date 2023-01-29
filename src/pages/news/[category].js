@@ -36,6 +36,7 @@ export default function NewsArticlesByCategory({articles, category}) {
         {articles.map( article => { return (
             <div
               className="grid grid-cols-4 mb-2 p-3 max-md:block hover:bg-red-50"
+              key={article.id}
             >
               <div className="col-span-1 flex justify-end max-md:justify-start pr-10">
                 <p className="text-gray-400 text-sm font-medium pr-2 pt-1">
