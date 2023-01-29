@@ -1,4 +1,11 @@
 {
+  "dashboard":
+    {
+      "post": "11234",
+      "likes": "5475",
+      "followers": "6345435",
+      "following": "12"
+    },
   "products": [
     {
       "title": "Chair",
