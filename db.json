@@ -65,21 +65,33 @@
   "news": [
     {
       "title": "New car emerges!",
-      "category": "Cars",
+      "category": "cars",
       "details": "A well know car company launches a new car with a set of special features!",
       "id": "1"
      },
      {
       "title": "Global warming arises",
-      "category": "Nature",
+      "category": "nature",
       "details": "Global warming is alarming! sike!",
       "id": "2"
      },
      {
       "title": "Fashion show blows up with fashion!",
-      "category": "Fashion",
+      "category": "fashion",
       "details": "Fashion Global a globally known fashion gallery booms with new fashion styles",
       "id": "3"
+     },
+     {
+      "title": "Fashion is fashion",
+      "category": "fashion",
+      "details": "Fashion Global's motto: Fashion is fashion!",
+      "id": "4"
+     },
+     {
+      "title": "New car technology!",
+      "category": "cars",
+      "details": "Promising new car tech with advance AI integration.",
+      "id": "5"
      }
   ]
 }

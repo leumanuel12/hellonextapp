@@ -1,5 +1,6 @@
 import axios from "axios";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export async function getServerSideProps() {
   const response = await axios.get("http://localhost:4000/news");
@@ -13,6 +14,8 @@ export async function getServerSideProps() {
 }
 
 export default function News({ news }) {
+
+
   return (
     <div className="m-3 max-w-7xl mx-auto">
       <div className="p-3 mb-3">
@@ -27,7 +30,7 @@ export default function News({ news }) {
 
         {news.map((article) => {
           return (
-            <div className="grid grid-cols-4 mb-2 p-3 max-md:block hover:bg-red-50">
+            <div className="grid grid-cols-4 mb-2 p-3 max-md:block hover:bg-red-50" key={article.id}>
               <div className="col-span-1 flex justify-end max-md:justify-start pr-10">
                 <p className="text-gray-400 text-sm font-medium pr-2 pt-1">{article.category.toUpperCase()}</p>
               </div>
