@@ -100,5 +100,258 @@
       "details": "Promising new car tech with advance AI integration.",
       "id": "5"
      }
-  ]
+  ],
+
+  "jobs": [
+    {
+     "title": "Lead Brand Orchestrator",
+     "category": "Engineer",
+     "id": "1"
+    },
+    {
+     "title": "Human Tactics Specialist",
+     "category": "Designer",
+     "id": "2"
+    },
+    {
+     "title": "National Assurance Facilitator",
+     "category": "Agent",
+     "id": "3"
+    },
+    {
+     "title": "Senior Markets Consultant",
+     "category": "Engineer",
+     "id": "4"
+    },
+    {
+     "title": "District Accountability Agent",
+     "category": "Agent",
+     "id": "5"
+    },
+    {
+     "title": "Central Branding Designer",
+     "category": "Manager",
+     "id": "6"
+    },
+    {
+     "title": "Principal Security Technician",
+     "category": "Facilitator",
+     "id": "7"
+    },
+    {
+     "title": "Forward Metrics Strategist",
+     "category": "Supervisor",
+     "id": "8"
+    },
+    {
+     "title": "Senior Communications Designer",
+     "category": "Administrator",
+     "id": "9"
+    },
+    {
+     "title": "National Data Developer",
+     "category": "Representative",
+     "id": "10"
+    },
+    {
+     "title": "Product Research Specialist",
+     "category": "Developer",
+     "id": "11"
+    },
+    {
+     "title": "Internal Marketing Developer",
+     "category": "Liaison",
+     "id": "12"
+    },
+    {
+     "title": "National Optimization Strategist",
+     "category": "Associate",
+     "id": "13"
+    },
+    {
+     "title": "Lead Group Strategist",
+     "category": "Agent",
+     "id": "14"
+    },
+    {
+     "title": "Dynamic Implementation Supervisor",
+     "category": "Manager",
+     "id": "15"
+    },
+    {
+     "title": "Corporate Tactics Director",
+     "category": "Administrator",
+     "id": "16"
+    },
+    {
+     "title": "Internal Integration Architect",
+     "category": "Specialist",
+     "id": "17"
+    },
+    {
+     "title": "Chief Infrastructure Coordinator",
+     "category": "Director",
+     "id": "18"
+    },
+    {
+     "title": "National Paradigm Orchestrator",
+     "category": "Producer",
+     "id": "19"
+    },
+    {
+     "title": "Lead Mobility Planner",
+     "category": "Designer",
+     "id": "20"
+    },
+    {
+     "title": "National Tactics Developer",
+     "category": "Agent",
+     "id": "21"
+    },
+    {
+     "title": "Dynamic Mobility Analyst",
+     "category": "Technician",
+     "id": "22"
+    },
+    {
+     "title": "Customer Group Producer",
+     "category": "Associate",
+     "id": "23"
+    },
+    {
+     "title": "Future Web Designer",
+     "category": "Designer",
+     "id": "24"
+    },
+    {
+     "title": "Regional Marketing Administrator",
+     "category": "Architect",
+     "id": "25"
+    },
+    {
+     "title": "Human Operations Designer",
+     "category": "Representative",
+     "id": "26"
+    },
+    {
+     "title": "Forward Branding Architect",
+     "category": "Orchestrator",
+     "id": "27"
+    },
+    {
+     "title": "Customer Mobility Director",
+     "category": "Developer",
+     "id": "28"
+    },
+    {
+     "title": "Investor Metrics Facilitator",
+     "category": "Executive",
+     "id": "29"
+    },
+    {
+     "title": "Forward Infrastructure Coordinator",
+     "category": "Engineer",
+     "id": "30"
+    },
+    {
+     "title": "Forward Group Manager",
+     "category": "Executive",
+     "id": "31"
+    },
+    {
+     "title": "District Paradigm Representative",
+     "category": "Developer",
+     "id": "32"
+    },
+    {
+     "title": "Global Brand Assistant",
+     "category": "Supervisor",
+     "id": "33"
+    },
+    {
+     "title": "Future Paradigm Representative",
+     "category": "Planner",
+     "id": "34"
+    },
+    {
+     "title": "Central Branding Officer",
+     "category": "Officer",
+     "id": "35"
+    },
+    {
+     "title": "International Mobility Orchestrator",
+     "category": "Orchestrator",
+     "id": "36"
+    },
+    {
+     "title": "Investor Directives Architect",
+     "category": "Analyst",
+     "id": "37"
+    },
+    {
+     "title": "Direct Intranet Specialist",
+     "category": "Facilitator",
+     "id": "38"
+    },
+    {
+     "title": "Product Brand Analyst",
+     "category": "Manager",
+     "id": "39"
+    },
+    {
+     "title": "Internal Infrastructure Engineer",
+     "category": "Engineer",
+     "id": "40"
+    },
+    {
+     "title": "Product Intranet Planner",
+     "category": "Orchestrator",
+     "id": "41"
+    },
+    {
+     "title": "Lead Group Administrator",
+     "category": "Facilitator",
+     "id": "42"
+    },
+    {
+     "title": "Central Paradigm Liaison",
+     "category": "Strategist",
+     "id": "43"
+    },
+    {
+     "title": "Forward Security Orchestrator",
+     "category": "Analyst",
+     "id": "44"
+    },
+    {
+     "title": "Human Web Supervisor",
+     "category": "Agent",
+     "id": "45"
+    },
+    {
+     "title": "National Web Representative",
+     "category": "Analyst",
+     "id": "46"
+    },
+    {
+     "title": "Principal Identity Designer",
+     "category": "Facilitator",
+     "id": "47"
+    },
+    {
+     "title": "Customer Accounts Manager",
+     "category": "Director",
+     "id": "48"
+    },
+    {
+     "title": "International Program Agent",
+     "category": "Producer",
+     "id": "49"
+    },
+    {
+     "title": "Customer Accounts Designer",
+     "category": "Orchestrator",
+     "id": "50"
+    }
+   ]
 }

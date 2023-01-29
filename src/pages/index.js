@@ -6,6 +6,9 @@ export default function Home() {
 
       <div className="p-3 mb-3 w-full max-sm:block border-2 border-gray-300 rounded-md flex justify-start">
         <div className="p-2 hover:text-blue-500">
+          <Link href="/jobs">Jobs</Link>
+        </div>
+        <div className="p-2 hover:text-blue-500">
           <Link href="/news">News</Link>
         </div>
         <div className="p-2 hover:text-blue-500">
