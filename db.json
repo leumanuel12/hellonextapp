@@ -60,5 +60,26 @@
       "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
       "id": "10"
      }
+  ],
+
+  "news": [
+    {
+      "title": "New car emerges!",
+      "category": "Cars",
+      "details": "A well know car company launches a new car with a set of special features!",
+      "id": "1"
+     },
+     {
+      "title": "Global warming arises",
+      "category": "Nature",
+      "details": "Global warming is alarming! sike!",
+      "id": "2"
+     },
+     {
+      "title": "Fashion show blows up with fashion!",
+      "category": "Fashion",
+      "details": "Fashion Global a globally known fashion gallery booms with new fashion styles",
+      "id": "3"
+     }
   ]
 }

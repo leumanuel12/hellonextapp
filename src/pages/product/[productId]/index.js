@@ -42,7 +42,7 @@ export async function getStaticProps(ctx) {
       props:{
         product: result
       },
-      revalidate: 10, //ISR refresh data every 10 seconds upon request
+      revalidate: 10, //ISR refresh data after 10 seconds upon request
     }
   } catch (error) {
     console.log(error.message);
